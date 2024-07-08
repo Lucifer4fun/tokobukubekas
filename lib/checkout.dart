@@ -10,22 +10,6 @@ import 'rating_bar.dart';
 
 String? _paymentMethod;
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Toko Buku',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Detail(
-        Book('CorelDraw untuk Tingkat Pemula Sampai Mahir',
-            'Jubilee Enterprise', 'Rp 50.000', 'assets/corel.jpg', 3.5, 123),
-      ),
-    );
-  }
-}
-
 class Detail extends StatelessWidget {
   final Book book;
 
